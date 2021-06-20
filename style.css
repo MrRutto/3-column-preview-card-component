@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.75;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 400;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.card:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card:nth-child(3) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.heading {
+  font-size: 2.5em;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.content {
+  margin-bottom: 2em;
+}
+
+button {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+button:hover {
+  color: hsl(0, 0%, 95%) !important;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px hsl(0, 0%, 95%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Colors */
+
+.orange-background {
+  background-color: var(--bright-orange);
+}
+
+.orange-background button {
+  color: var(--bright-orange);
+}
+
+.cyan-background {
+  background-color: var(--dark-cyan);
+}
+
+.cyan-background button {
+  color: var(--dark-cyan);
+}
+
+.dark-cyan-background {
+  background-color: var(--very-dark-cyan);
+}
+
+.dark-cyan-background button {
+  color: var(--very-dark-cyan);
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    padding: 2rem 3rem;
+    width: fit-content;
+    max-width: 305px;
+  }
+  .card:nth-child(1) {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .card:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+  .content {
+    margin-bottom: 5em;
+  }
+}
